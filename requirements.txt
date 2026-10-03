@@ -1,0 +1,13 @@
+# Core pipeline (local DuckDB mode needs only these three)
+pandas>=2.0
+duckdb>=1.0
+pyarrow>=14.0
+
+# Production Spark mode (needs Java 11+ on the host)
+pyspark>=3.4,<4.0
+
+# Optional: run the Airflow DAG for real scheduling
+# apache-airflow>=2.8
+
+# Optional: Great Expectations suites (see ge_suites.py)
+great-expectations>=1.0
